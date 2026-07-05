@@ -19,7 +19,7 @@ fn set_github_output(should_notify: bool) {
 
         writeln!(file, "SHOULD_NOTIFY={}", should_notify).expect("Failed to write to GITHUB_ENV");
     } else {
-        println!("⚠️ GITHUB_ENV not set, skipping environment variable update.");
+        println!"⚠️ GITHUB_ENV not set, skipping environment variable update.");
     }
 }
 
