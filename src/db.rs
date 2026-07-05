@@ -12,7 +12,7 @@ use crate::schema::people::dsl as people_dsl;
 pub type DbPool = r2d2::Pool<ConnectionManager<PgConnection>>;
 
 pub fn establish_connection() -> DbPool {
-    dotenv().ok();
+    dotenv().ok
 
     let database_url = env::var("DATABASE_URL").expect("DATABASE_URL must be set");
     let manager = ConnectionManager::<PgConnection>::new(database_url);
